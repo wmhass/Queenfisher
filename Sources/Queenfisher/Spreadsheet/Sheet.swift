@@ -29,8 +29,8 @@ public struct Sheet: Codable {
 		}
 		public let title: String
 		
-		public sheetId: Int? = nil
-		public index: Int? = nil
+		public var sheetId: Int? = nil
+		public var index: Int? = nil
 		
 		public var sheetType: SheetType? = nil
 		public var hidden: Bool? = nil
