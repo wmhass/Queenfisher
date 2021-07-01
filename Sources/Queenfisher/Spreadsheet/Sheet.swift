@@ -14,7 +14,7 @@ public struct Sheet: Codable {
 	public let data: [Sheet.Data]?
 	
 	
-	enum SheetType: String, Codable {
+	public enum SheetType: String, Codable {
 		case unspecified = "SHEET_TYPE_UNSPECIFIED"
 		case grid = "GRID"
 		case object = "OBJECT"
