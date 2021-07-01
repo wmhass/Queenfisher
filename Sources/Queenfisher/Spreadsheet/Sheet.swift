@@ -22,20 +22,20 @@ public struct Sheet: Codable {
 	
 	public struct Properties: Codable {
 		public struct Grid: Codable {
-			let rowCount: Int
-			let columnCount: Int
-			var frozenRowCount: Int? = nil
-			var frozenColumnCount: Int? = nil
+			public let rowCount: Int
+			public let columnCount: Int
+			public var frozenRowCount: Int? = nil
+			public var frozenColumnCount: Int? = nil
 		}
-		let title: String
+		public let title: String
 		
-		var sheetId: Int? = nil
-		var index: Int? = nil
+		public sheetId: Int? = nil
+		public index: Int? = nil
 		
-		var sheetType: SheetType? = nil
-		var hidden: Bool? = nil
-		var rightToLeft: Bool? = nil
-		var gridProperties: Grid? = nil
+		public sheetType: SheetType? = nil
+		public hidden: Bool? = nil
+		public rightToLeft: Bool? = nil
+		public gridProperties: Grid? = nil
 	}
 	
 	public enum Dimension: String, Codable {
@@ -43,8 +43,8 @@ public struct Sheet: Codable {
 		case columns = "COLUMNS"
 	}
 	public class ValuesRange: Codable {
-		let majorDimension: Dimension
-		let range: String
+		public let majorDimension: Dimension
+		public let range: String
 		
 		public let values: [[String]]?
 		
