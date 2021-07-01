@@ -10,8 +10,8 @@ import Foundation
 /// A single sheet in a Google Spreadsheet
 public struct Sheet: Codable {
 	
-	let properties: Properties
-	let data: [Sheet.Data]?
+	public let properties: Properties
+	public let data: [Sheet.Data]?
 	
 	
 	enum SheetType: String, Codable {
