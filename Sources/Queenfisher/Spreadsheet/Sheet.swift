@@ -32,10 +32,10 @@ public struct Sheet: Codable {
 		public sheetId: Int? = nil
 		public index: Int? = nil
 		
-		public sheetType: SheetType? = nil
-		public hidden: Bool? = nil
-		public rightToLeft: Bool? = nil
-		public gridProperties: Grid? = nil
+		public var sheetType: SheetType? = nil
+		public var hidden: Bool? = nil
+		public var rightToLeft: Bool? = nil
+		public var gridProperties: Grid? = nil
 	}
 	
 	public enum Dimension: String, Codable {
