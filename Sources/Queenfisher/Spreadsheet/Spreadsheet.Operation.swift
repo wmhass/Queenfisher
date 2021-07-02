@@ -9,7 +9,7 @@ import Foundation
 
 public extension Spreadsheet {
 	/// A single kind of update to apply to a spreadsheet.
-	struct Operation: Codable {
+	public struct Operation: Codable {
 		
 		public struct SheetRange: Codable {
 			let sheetId: Int
@@ -71,9 +71,9 @@ public extension Spreadsheet {
 		public init (_ op: Operation) { requests = [op] }
 	}
 	/// Response to a BatchUpdate
-	struct UpdateResponse: Codable {
-		let spreadsheetId: String
-		let replies: [Operation]
+	public struct UpdateResponse: Codable {
+		public let spreadsheetId: String
+		public let replies: [Operation]
 	}
 	/// Response to a write request
 	struct WriteResponse: Codable {
